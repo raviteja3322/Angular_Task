@@ -1,0 +1,24 @@
+
+<div class="card" style="background-color: rgb(177, 233, 225);">
+  <div class="card-header">
+      <a [routerLink]="['./FileUplaod']" class="btn btn-outline-primary btn-lg" >UploadPage</a>
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <a [routerLink]="['./History']" class="btn btn-outline-primary btn-lg">HistoryPage</a>
+  </div>
+</div>
+
+<div>
+  <router-outlet></router-outlet>
+  <img src="https://raw.githubusercontent.com/maciejtreder/angular-and-nodejs-data/step2/src/assets/loader.gif" *ngIf="displayLoader | async" />
+</div>
+
+
+<!-- <mat-tab-group mat-align-tabs="start">
+  <mat-tab label="Upload Page" > class="btn btn-primary btn-lg"
+    <app-uploder></app-uploder>
+  </mat-tab>
+  
+  <mat-tab label="History Page">
+    <app-history></app-history>
+  </mat-tab>
+</mat-tab-group> -->

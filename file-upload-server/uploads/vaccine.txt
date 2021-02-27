@@ -1,0 +1,29 @@
+[{
+    "name": "Hepatitis",
+   "description": "antibodies",
+   "purpose":"dose1",
+"usedage":"use1",
+"brand":"Bharath",
+"create_date":"2021-01-01",
+"update_date":"2021-01-08"
+
+},
+{
+   "name": "Rotavirus,
+   "description": "antibodies",
+   "purpose":"dose2",
+"usedage":"use1",
+"brand":"Bharath",
+"create_date":"2021-01-01",
+"update_date":"2021-01-08"
+},
+{
+   "name": "Covid",
+   "description": "antibodies",
+   "purpose":"dose3",
+"usedage":"use1",
+"brand":"Bharath",
+"create_date":"2021-01-01",
+"update_date":"2021-01-08"
+}
+]

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head> -->
+
+<body>
+  <div class="parent">
+    <div class="card-body" style="margin-left: 45px; margin-top: 40px">
+    
+      <mat-form-field class="example-full-width">
+        <mat-label>File:</mat-label>
+        <input matInput placeholder="root/dir1/dirx/file.ext" [readonly]="!editable" [value]="filename" />
+      </mat-form-field>
+
+     
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button  mat-raised-button color="primary" (click)="onBrowse()">Browse</button>
+      <br />
+      <br />
+      <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+      <button mat-raised-button color="accent" [disabled]="!filename" (click)="onUpload()">Upload</button>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button mat-raised-button color="warn" (click)="onClear()">Clear</button>
+      <br />
+      <br />
+      <!-- <mat-progress-bar *ngIf="showProgress" [value]="progress" mode="query"></mat-progress-bar> -->
+
+      <br />
+      <div class="progress form-group" *ngIf="progress > 0">
+        <div class="progress-bar progress-bar-striped bg-success" role="progressbar" [style.width.%]="progress">
+
+        </div>
+    </div>
+
+      <!-- <div class="progress" *ngIf="showProgress">
+        <div class="progress-bar progress-bar-striped active" style="width: 100%">100%</div>
+      </div>
+    </div> -->
+
+    <!-- 
+  mode="indeterminate" -->
+    <input type="file" #fileInput id="fileUpload" multiple name="fileUpload" style="display: none" />
+  </div>
+  </div>
+</body>
+
+</html>
